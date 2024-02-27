@@ -10,9 +10,9 @@ import com.example.band43.domain.Member;
 @Repository
 public interface MemberRepository extends JpaRepository<Member, Long> {
 
-	public Optional<Member> findMemberByNickname(String nickname);
+	Optional<Member> findMemberByNickname(String nickname);
 
-	public Optional<Member> findMemberById(Long id);
+	Optional<Member> findMemberById(Long id);
 
-	public Optional<Member> findMemberBySocialId(Long id);
+	Optional<Member> findMemberBySocialId(Long id);
 }
